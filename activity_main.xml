@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+
+    <WebView
+            android:layout_width="328dp"
+            android:layout_height="377dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="84dp" android:layout_marginStart="84dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="118dp"
+            android:id="@+id/webView1"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="65dp" android:layout_marginRight="65dp"
+            app:layout_constraintHorizontal_bias="0.511"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/txtInput"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="@android:string/search_go"
+            android:ems="10"
+            android:id="@+id/txtInput" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="44dp"
+            android:layout_marginLeft="56dp" android:layout_marginStart="56dp"/>
+    <Button
+            android:text="SUBMIT"
+            android:layout_width="88dp"
+            android:layout_height="52dp"
+            android:id="@+id/btnSubmit" app:layout_constraintStart_toEndOf="@+id/txtInput"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="40dp"/>
+</android.support.constraint.ConstraintLayout>
